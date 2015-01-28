@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="row_padding">3dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="normal_size">10sp</dimen>
+    <dimen name="small_thumbnail_size">50dp</dimen>
+    <dimen name="large_thumbnail_size">200dp</dimen>
+
+
+</resources>

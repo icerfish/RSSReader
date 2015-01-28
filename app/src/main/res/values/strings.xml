@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RSS Reader</string>
+    <string name="article_title">Article Title</string>
+    <string name="article_description">Article Description</string>
+    <string name="article_date">Article Date</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="message_error">Error</string>
+    <string name="message_error_downloading">There was an error downloading the content!</string>
+    <string name="message_error_parsing">There was an error parsing the content!</string>
+
+
+
+</resources>

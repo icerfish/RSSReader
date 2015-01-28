@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:padding="@dimen/row_padding">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <com.icerfish.rssreader.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/light_grey"
+            android:text="@string/article_title"
+            android:id="@+id/title" />
+
+        <com.icerfish.rssreader.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text"
+            android:textColor="@color/grey"
+            android:text="@string/article_date"
+            android:textSize="@dimen/normal_size"
+            android:textStyle="bold"
+            android:id="@+id/pub_date" />
+
+        <com.icerfish.rssreader.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text"
+            android:textColor="@color/light_grey"
+            android:text="@string/article_description"
+            android:id="@+id/description"
+            android:textSize="@dimen/normal_size"
+            android:maxLines="@integer/max_lines_description"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="@dimen/small_thumbnail_size"
+        android:layout_height="@dimen/small_thumbnail_size"
+        android:id="@+id/smallThumbnail"
+        android:layout_weight="0"
+        android:layout_marginLeft="@dimen/row_padding"
+         />
+
+</LinearLayout>

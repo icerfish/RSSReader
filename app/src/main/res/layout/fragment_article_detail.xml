@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="@dimen/large_thumbnail_size"
+        android:layout_height="@dimen/large_thumbnail_size"
+        android:id="@+id/largeThumbnail"
+        android:layout_gravity="center_horizontal" />
+
+    <com.icerfish.rssreader.view.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Text"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/light_grey"
+        android:text="@string/article_title"
+        android:id="@+id/title" />
+
+    <com.icerfish.rssreader.view.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Text"
+        android:textColor="@color/grey"
+        android:text="@string/article_date"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        android:id="@+id/pub_date" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal">
+
+        <com.icerfish.rssreader.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Text"
+            android:textColor="@color/light_grey"
+            android:text="@string/article_description"
+            android:id="@+id/description"
+            android:textSize="@dimen/normal_size"
+             />
+        </ScrollView>
+
+</LinearLayout>
